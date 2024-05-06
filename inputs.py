@@ -27,16 +27,12 @@ class TestUserDetails(unittest.TestCase):
 
     def test_display_details(self):
         # Simulate user input
-        with patch('builtins.input', side_effect=['Alice', '30', '1234567890']):  # Use patch directly
-            # Call the function under test
+        with patch('builtins.input', side_effect=['Alice', '30', '1234567890']):
             name, age, phone_number = get_user_input()
 
-        # Redirect stdout to capture print output
         with self.captured_output as output:
-            # Call the function under test
             display_details(name, age, phone_number)
 
-            # Get the printed output
             output_str = output.getvalue().strip()
 
         # Check if the output matches the expected format
