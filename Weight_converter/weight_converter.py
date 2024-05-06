@@ -10,7 +10,6 @@ def main():
     print("2. lbs to kg")
     choice = int(input("Enter your choice (1 or 2): "))
 
-
     if choice == 1:
         weight_kg = float(input("Enter your weight in kgs: "))
         print("Weight in lbs: ", kg_to_lbs(weight_kg))
