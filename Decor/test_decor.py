@@ -3,7 +3,6 @@ from decor import add_prefix, greet
 
 class TestAddPrefixDecorator(unittest.TestCase):
     def test_add_prefix_decorator(self):
-        # Call the decorated function
         result = greet("Alice")
         
         # Check if the prefix is added correctly
