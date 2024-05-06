@@ -1,6 +1,7 @@
 def add_prefix(func):
     def wrapper(*args, **kwargs):
-        return func(*args, **kwargs)
+        result = func(*args, **kwargs)
+        return f"Prefix: {result}"
     return wrapper
 
 @add_prefix

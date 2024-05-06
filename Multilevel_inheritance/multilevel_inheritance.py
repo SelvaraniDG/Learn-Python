@@ -4,7 +4,7 @@ class Animal:
 
 class Pet(Animal):
     def play(self):
-        print("Playing")
+        print("Pet is Playing")
 
 class Dog(Pet):
     def bark(self):
@@ -16,6 +16,6 @@ class Poodle(Dog):
 
 poodle = Poodle()
 poodle.speak() 
-poodle.bark() 
 poodle.play()
+poodle.bark() 
 poodle.groom() 

@@ -8,6 +8,6 @@ def divide(x, y):
     finally:
         print("Division operation completed.")
 
-divide(10, 2)   
+divide(10, 2)
 divide(10, 0)
 divide(12, 4)
