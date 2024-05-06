@@ -1,7 +1,7 @@
 import unittest
 from io import StringIO
 import sys
-from mock import patch  # Import patch from mock module
+from mock import patch
 
 def get_user_input():
     name = input("Enter your name: ")
